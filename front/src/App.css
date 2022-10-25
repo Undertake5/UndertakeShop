@@ -1,8 +1,20 @@
 .App {
   text-align: center;
   background-color: white;
-  margin: 300px ;
-  margin-top:  200px; ;
+  margin-top: 100px; 
+  margin: 50px;
 
+}
+
+.blockBarra{
+  background-color:darkgreen;
+}
+
+button{
+  background-color: darkgreen;
+  color: white;
+  font-size: 30px;
+  padding: 2%;
+  border: none;
 }
 
