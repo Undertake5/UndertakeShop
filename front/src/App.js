@@ -2,11 +2,12 @@ import './App.css';
 import React from 'react';
 import Barra from './componentes/barraNav';
 import Login from './componentes/login';
+import Inicio from './componentes/inicio';
 
 function App() {
   return (
     <div className="App">
-      <Barra mess1="Inicio" mess2="Listar productos"  mess3="Modificar productos" mess4="Lista ventas" mess5="Carrito" mess6="Login" mess7="Registar" />
+      <Inicio/>
     </div>
   );
 }

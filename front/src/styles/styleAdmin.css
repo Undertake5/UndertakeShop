@@ -1,0 +1,27 @@
+body{
+  background-color: white;
+  font-size: 25px;
+  margin-top: 25px;
+
+}
+
+.buttonAdmin{
+  background-color: darkgreen;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 2%;
+}
+
+.blockAdmin{
+  background-color: darkgreen;
+  margin-left: 100px; 
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.iconoHome{
+  alt: "logo";
+  width: 80px;
+  
+}
