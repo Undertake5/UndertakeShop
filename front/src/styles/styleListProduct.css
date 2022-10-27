@@ -1,0 +1,14 @@
+table {
+  margin-top: 50px;
+  margin-left: 15%;
+  
+  
+  table-layout: fixed;
+  width: 75%;
+  border-collapse: collapse;
+  border: 1px solid darkgreen;
+}
+
+th, td {
+  padding: 20px;
+}
