@@ -12,3 +12,15 @@ table {
 th, td {
   padding: 20px;
 }
+
+.producto{
+  vertical-align: text-top;
+}
+
+.tabla{
+  background-color: rgb(194, 248, 194);
+  border: 1px solid;
+  
+
+  
+}

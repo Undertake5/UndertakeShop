@@ -2,16 +2,16 @@
   {
     "idVenta" : 123,
     "fecha": "27/09/2022",
-    "valor" : 35
+    "valor" : 35.0
   },
   {
     "idVenta" : 234,
     "fecha": "28/09/2022",
-    "valor" : 50
+    "valor" : 50.0
   },
   {
     "idVenta" : 543,
     "fecha": "29/09/2022",
-    "valor" : 10
+    "valor" : 10.0
   }
 ]

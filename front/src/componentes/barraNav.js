@@ -12,18 +12,20 @@ function Barra (propiedad){
     setMensaje(mensaje= <ListarProductos/>)
   }
   let modProductos =() =>{
-    setMensaje(mensaje= "Modificar productos")
+    setMensaje(mensaje= "modProductos")
   }
   let listVentas =() =>{
     setMensaje(mensaje= "LIsta ventas")
   }
   let carrito =() =>{
     setMensaje(mensaje= "Carrito")
+    
   }
 
   let logear =() =>{
     setMensaje(<Login/>)
   }
+  
   let registrar =() =>{
     setMensaje(mensaje= "Registrar")
   }
