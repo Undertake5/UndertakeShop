@@ -7,7 +7,7 @@ function ListVentas(){
 
   return(
     <div >
-      <table >
+      <table className='tabla'>
         <tr>
           <th>Fecha</th>
           <th>IdVenta</th>

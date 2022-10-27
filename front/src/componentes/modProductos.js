@@ -1,24 +1,39 @@
 import React from 'react'
-import "../styles/styleListProduct.css"
+import datos from '../productos.json'
+import '../styles/styleListProduct.css'
+import "../componentes/administrador"
+import "./ListProductos"
 
-
-
-function ListarProductos () {  
-  return (
-    <div>
-        <div className='areaCreacion'> <label> Nombre del producto</label> <input type="text"></input> </div>
-        <div className='areaCreacion'> <label> Descripcion </label> <input type="text"></input> </div>
-        <div className='areaCreacion'> <label> Precio</label> <input type="number"></input></div>
+function modProductos(){
+    let visualizar= modProductos
+  return(
+    <div className='tabla'>
+      
+          <div className='botonModificar' ><button>Modificar</button></div>
+          <div className='botonGuardar' ><button> guardar </button></div>
+          <tr >
+            {/*<div src={imagen[0].url}></div>*/}
+            <th className='imagenProducto'>Imagen</th>
+            <th className='producto'>Nombre</th>
+            <th className='producto'>Descripcion</th>
+            <th className='producto'>Valor</th>
+          </tr>
         
-        <div className='botonCreacion'>
-          <button> Guardar </button>
-          <button> Eliminar </button>
-        </div>
-        
+          {visualizar.map( (elem, idx) => {
+            return(
+              <tr>
+                <td > {elem.imagen} </td>
+                  <td > {elem.nombre} </td>
+                  <td > {elem.descripcion} </td>
+                  <td >$ {elem.valor} </td>
+              </tr>
+            )
+      })}
+  
     </div>
-   
+
   )
 }
 
 
-export default ListarProductos
+export default modProductos
