@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../styles/styleInicio.css';
 import Admin from "./administrador";
+import Cliente from "./cliente";
 
 const Inicio = () => {
 
@@ -16,7 +17,7 @@ const Inicio = () => {
   let [estado, setEstado] = useState(init)
 
   function vistaCliente(){
-    setEstado(estado="")
+    setEstado(estado=<Cliente/>)
   }
   function vistaAdmin(){
     setEstado(estado=<Admin/>)

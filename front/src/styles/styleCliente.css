@@ -1,16 +1,26 @@
+body{
+  background-color: white;
+  font-size: 25px;
+  margin-top: 25px;
+
+}
+
 .buttonCliente{
-  background-color: black;
+  background-color: darkgreen;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   border: none;
-  padding: 1.5%;
+  padding: 2%;
 }
 
 .blockCliente{
-  background-color: black;
+  background-color: darkgreen;
+  margin-left: 100px; 
+  margin-right: 100px;
+  margin-top: 10px;
 }
 
-img {
-  width: 100vw;
-  height: 100vh;
+.iconoCliente {
+  alt: "logo";
+  width: 80px;
 }
