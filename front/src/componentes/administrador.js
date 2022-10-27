@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../styles/styleAdmin.css';
 import Inicio from "./inicio"
 import ListVentas from "./ListVentas";
+import ListProductos from "./ListProductos";
 
 function Admin(){
   const volver =() =>{
@@ -12,13 +13,13 @@ function Admin(){
   }
   
   const listarProductos =() =>{
-    setListProductos(listProductos= "Listar Productos")
+    setListProductos(listProductos= <ListProductos/>)
     setModProductos(modProductos= "")
     setListVentas(listVentas= "")
   }
 
   let modificarProductos =() =>{
-    setModProductos(modProductos= "Modificar productos")
+    setModProductos(modProductos= <modProductos/>)
     setListProductos(listProductos= "")
     setListVentas(listVentas= "")
   }

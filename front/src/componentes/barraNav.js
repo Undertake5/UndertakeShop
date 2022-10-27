@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ListarProductos from "./ListProductos";
 import Login from "./login";
 
 function Barra (propiedad){
@@ -8,7 +9,7 @@ function Barra (propiedad){
     setMensaje(mensaje= "Inicio")
   }
   let listProductos =() =>{
-    setMensaje(mensaje= "Listar productos")
+    setMensaje(mensaje= <ListarProductos/>)
   }
   let modProductos =() =>{
     setMensaje(mensaje= "Modificar productos")

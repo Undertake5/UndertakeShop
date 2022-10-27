@@ -1,4 +1,4 @@
-import datos from '../archivo.json'
+import datos from '../ventas.json'
 import '../styles/styleListProduct.css'
 
 function ListVentas(){
