@@ -1,20 +1,22 @@
-table {
-  margin-top: 50px;
-  margin-left: 15%;
-  text-align: center;
-  table-layout: fixed;
-  width: 75%;
-  border-collapse: collapse;
-  border: 1px solid darkgreen;
-}
-.buttonMod{
-  font-size: 25px;
-  border-radius: 10px;
-  background-color:darkgreen;
-  color:white;
+.tablaModProductos{
   border: none;
-  padding: 1.5%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 6%;
-  }
+}
+
+.colModProductos{
+  font: bold 90% monospace;     
+}
+
+.rowModProductos{   
+  font: 60% monospace;     
+}
+
+.botonMod{
+  border: none;
+  padding: 3%;;
+  background-color:  darkgreen;
+  color: white;
+  font: oblique bold 80% cursive;
+}
+
+
+

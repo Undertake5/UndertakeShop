@@ -10,27 +10,29 @@ function ModProductos(){
 
   let visualizar=datos
   return(
-    <div >
-    <table className='tabla'>
-       <div ></div>
-       <tr >
-         <div img src={datos.imagen}></div>
-         <th className='producto'>imagen</th>
-         <th className='producto'>Nombre</th>
-         <th className='producto'>Descripcion</th>
-         <th className='producto'>Unidades Disponibles</th>
-         <th className='producto'>Valor</th>
-       </tr>
-       
+<div >
+        <table className='tablaModProductos'>
+        
+        <tr >
+            <th ></th>
+            <th className='colModProductos'>Articulo</th>
+            <th className='colModProductos'>Descripcion</th>
+            <th className='colModProductos'>Unidades Disponibles</th>
+            <th className='colModProductos'>Valor</th>
+            <th className='colModProductos'></th>
+        </tr>
+
           {visualizar.map( (elem, idx) => {
             return(
               <tr>
-                  <td> {<img src={elem.Imagen} />} </td>
-                  <td > {elem.imagen} </td>
-                  <td > {elem.nombre} </td>
-                  <td > {elem.descripcion} </td> 
-                  <td > {elem.stock} </td>
-                  <td >$ {elem.valor} </td>       
+                  <td className="rowModProductos"> {<img src={elem.Imagen} />} </td>
+                  <td className="rowModProductos"> {elem.imagen} </td>
+                  <td className="rowModProductos"> {elem.nombre} </td>
+                  <td className="rowModProductos"> {elem.descripcion} </td> 
+                  <td className="rowModProductos"> {elem.stock} </td>
+                  <td className="rowModProductos">$ {elem.valor} </td>
+                  <td className="rowModProductos"></td><button  className="buttonMod">Guardar</button>
+                  <td className="rowModProductos"></td><button  className="buttonMod">Modificar</button>       
                 
 
                  
@@ -38,15 +40,16 @@ function ModProductos(){
             )
             
       })} 
-      </table>    
-             <button  className="buttonMod">Guardar</button>
-              <button  className="buttonMod">Modificar</button>
+         
+         
      
-    </div>
+         </table>
+     </div>
 
   )
 
 }
+
 
 
 export default ModProductos
