@@ -1,0 +1,24 @@
+.tablaProductosCliente{
+    border: none;
+}
+
+.colProClientes{
+    font: bold 90% monospace;     
+}
+
+.rowProClientes {   
+    font: 60% monospace;     
+}
+
+.botonComprar{
+    border: none;
+    padding: 3%;;
+    background-color: #4CAF50;
+    color: white;
+    font: oblique bold 80% cursive;
+}
+
+.botonComprar:hover {
+    background-color: #111;
+}
+  

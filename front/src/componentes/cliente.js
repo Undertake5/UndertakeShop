@@ -3,6 +3,7 @@ import '../styles/styleCliente.css';
 import Inicio from "./inicio"
 import ListVentas from "./ListVentas";
 import ListProductos from "./ListProductos";
+import ListarProductosCliente from "./ListProductosCliente";
 
 function Cliente(){
   const volver =() =>{
@@ -12,7 +13,7 @@ function Cliente(){
   }
   
   const listarProductos =() =>{
-    setListProductos(listProductos= "Listar Productos")
+    setListProductos(listProductos=  <ListarProductosCliente/>)
     setListCarrito(listCarrito= "")
   }
 
@@ -22,14 +23,14 @@ function Cliente(){
   }
 
   let init =<div className="blockCliente">
-              <img  className="iconoCliente" src="./imagenes/undertake.png" align="left"></img>
+              
               <button onClick={listarProductos} className="buttonCliente">Lista de  productos</button>
               <button onClick={listarCarrito} className="buttonCliente">Carrito</button>
               <button  onClick={volver} className="buttonCliente">Volver</button>
             </div>
 
   let [barra, setBarra] = useState(init)
-  let [listProductos, setListProductos] = useState("")
+  let [listProductos, setListProductos] = useState(<ListarProductosCliente/>)
   let[listCarrito, setListCarrito] = useState("")
 
   return (
