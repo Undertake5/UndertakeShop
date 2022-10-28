@@ -1,0 +1,61 @@
+import React from 'react'
+import datos from '../productos.json'
+import '../styles/styleListProduct.css'
+import "../componentes/administrador"
+
+
+function ListarProductos(){
+  
+
+  let visualizar = datos
+
+  return(
+    <div className='Lista'>
+      {/*primer elemento*/ }
+          <div >
+          <tr >
+            <img scr= "../../public/imagenes/armatodo.jpeg"> </img>
+            <th className='imagenProducto'>Imagen</th>
+            <th className='producto'>Nombre</th>
+            <th className='producto'>Descripcion</th>
+            <th className='producto'>Valor</th>
+          </tr>
+          </div>
+         {/*segunda elemento*/ }
+         <div >
+          <tr >
+            <img scr= "../../public/imagenes/lampara_proyector.jpg"> </img>
+            <th className='imagenProducto'>Imagen</th>
+            <th className='producto'>Nombre</th>
+            <th className='producto'>Descripcion</th>
+            <th className='producto'>Valor</th>
+          </tr>
+          </div>
+
+           {/*tercer elemento*/ }
+           <div >
+          <tr >
+            <img scr= "../../public/imagenes/portaretrato_corazon.jpg"> </img>
+            <th className='imagenProducto'>Imagen</th>
+            <th className='producto'>Nombre</th>
+            <th className='producto'>Descripcion</th>
+            <th className='producto'>Valor</th>
+          </tr>
+          </div>
+        
+          {visualizar.map( (elem, idx) => {
+            return(
+              <tr>
+                <td > {elem.imagen} </td>
+                  <td > {elem.nomdre} </td>
+                  <td > {elem.descripcion} </td>
+                  <td >$ {elem.valor} </td>
+              </tr>
+            )
+      })}
+  
+    </div>
+  )
+}
+
+export default ListarProductos
