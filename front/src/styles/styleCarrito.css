@@ -25,3 +25,16 @@ body{
   margin-left: 2%;
   margin-right: 2%;
 }
+
+.buttonFinalizar:hover {
+  background-color: #111;
+}
+
+.buttonCancelar:hover {
+  background-color: #111;
+}
+
+.imagCarrito {
+  alt: "logo";
+  width: 110px;
+}

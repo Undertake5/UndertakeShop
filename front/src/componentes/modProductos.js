@@ -25,8 +25,7 @@ function ModProductos(){
           {visualizar.map( (elem, idx) => {
             return(
               <tr>
-                  <td className="rowModProductos"> {<img src={elem.Imagen} />} </td>
-                  <td className="rowModProductos"> {elem.imagen} </td>
+                  <td className='rowModProductos'> <img  className="iconoCliente" src={elem.imagen} align="left"></img> </td>
                   <td className="rowModProductos"> {elem.nombre} </td>
                   <td className="rowModProductos"> {elem.descripcion} </td> 
                   <td className="rowModProductos"> {elem.stock} </td>

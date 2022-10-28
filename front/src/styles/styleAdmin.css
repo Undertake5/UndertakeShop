@@ -6,19 +6,21 @@ body{
 }
 
 .buttonAdmin{
-  background-color: darkgreen;
+  background-color: #5C8D3A;
   color: white;
   font-size: 20px;
   border: none;
   padding: 2%;
   font: oblique bold 120% cursive;
+  cursor:pointer;
 }
 
 .blockAdmin{
-  background-color: darkgreen;
+  background-color: #5C8D3A;
   margin-left: 100px; 
   margin-right: 100px;
   margin-top: 10px;
+  cursor:pointer;
 }
 
 .iconoHome{
@@ -26,3 +28,8 @@ body{
   width: 80px;
   
 }
+.buttonAdmin:hover{
+  background-color: #111;
+}
+
+

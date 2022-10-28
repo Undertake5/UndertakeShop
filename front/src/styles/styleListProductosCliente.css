@@ -13,9 +13,10 @@
 .botonComprar{
     border: none;
     padding: 3%;;
-    background-color: #4CAF50;
+    background-color: #5C8D3A;
     color: white;
     font: oblique bold 80% cursive;
+    cursor:pointer;
 }
 
 .botonComprar:hover {

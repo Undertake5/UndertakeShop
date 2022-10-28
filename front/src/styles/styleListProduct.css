@@ -1,16 +1,15 @@
 table {
-  margin-top: 50px;
-  margin-left: 15%;
-  
-  
+  margin-top: 50%;
+  margin-left: 50%;
+  text-align: center; 
   table-layout: fixed;
-  width: 75%;
+  width: 15%;
   border-collapse: collapse;
-  border: 1px solid darkgreen;
+  border: 1px solid #5C8D3A;
 }
 
 th, td {
-  padding: 20px;
+  padding: 10px;
 }
 
 .producto{
@@ -18,7 +17,7 @@ th, td {
 }
 
 .tabla{
-  background-color: rgb(194, 248, 194);
+  background-color: white;
   border: 1px solid;
    
 }

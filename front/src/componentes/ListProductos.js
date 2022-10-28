@@ -13,7 +13,7 @@ function ListarProductos(){
        <table className='tabla'>
           <div ></div>
           <tr >
-            <div img src={datos.imagen}></div>
+          <th className='iconoCliente'><img src={datos.imagen} align="left" /></th>
             <th className='producto'>Nombre</th>
             <th className='producto'>Descripcion</th>
             <th className='producto'>Unidades Disponibles</th>
@@ -23,7 +23,7 @@ function ListarProductos(){
           {visualizar.map( (elem, idx) => {
             return(
               <tr>
-                <td > {elem.imagen} </td>
+                <td> {<img className='iconoCliente' src={elem.imagen} align="left"/>} </td>
                   <td > {elem.nombre} </td>
                   <td > {elem.descripcion} </td>
                   <td > {elem.stock} </td>              

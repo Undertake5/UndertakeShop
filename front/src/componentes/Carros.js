@@ -2,7 +2,6 @@ import datos from '../VentaAdm.json'
 import '../styles/styleCarrito.css'
 
 
-
 function Carros(){
 
 

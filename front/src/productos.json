@@ -1,7 +1,7 @@
 [
     {
       "id":1,
-      "imagen":"../public/imagenes/armatodo.jpeg",
+      "imagen":"imagenes/armatodo.jpeg",
       "nombre" : "Armatodo",
       "descripcion": "Juguete para niños mayores de 2 años,ayuda con la destreza del niño",
       "stock":10,
@@ -9,7 +9,7 @@
     },
     {
       "id":2,
-      "imagen":"../public/imagenes/lampara_proyector.jpg",
+      "imagen":"imagenes/lampara_proyector.jpg",
       "nombre" : "Lampara reflectora",
       "descripcion": "Refleja muchas figuras al apagar la luz",
       "stock":30,
@@ -17,7 +17,7 @@
     },
     {
       "id":3,
-      "imagen":"../public/imagenes/portaretrato_corazon.jpg",
+      "imagen":"imagenes/portaretrato_corazon.jpg",
       "nombre" : "portaretrato corazon",
       "descripcion": "portaretrato para foto 10x15",
       "stock":50,

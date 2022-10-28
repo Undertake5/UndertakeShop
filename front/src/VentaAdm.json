@@ -1,19 +1,25 @@
 [
     {
-"Imagen":1,
+"Imagen":"imagenes/armatodo.jpeg",
 "Cantidad":2,
-"Producto":"Chocolatina",
-"Valor": 2000,
-"Total": 4000
+"Producto":"Armatodo",
+"Valor": 35.0,
+"Total": 70.0
 },
-    {
-        "Imagen":"helado.png",
-        "Cantidad":5,
-        "Producto":"Helado",
-        "Valor": 10000,
-        "Total": 50000
-    }
+{
+    "Imagen":"imagenes/lampara_proyector.jpg",
+    "Cantidad":5,
+    "Producto":"Lampara reflectora",
+    "Valor": 50.0,
+    "Total": 250.0
+},
+{
+    "Imagen":"imagenes/portaretrato_corazon.jpg",
+    "Cantidad":5,
+    "Producto":"portaretrato corazon",
+    "Valor": 10.0,
+    "Total": 50.0
+}
 
-  ]
-
+]
   
