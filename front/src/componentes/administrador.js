@@ -4,6 +4,7 @@ import Inicio from "./inicio"
 import ListVentas from "./ListVentas";
 import ListProductos from "./ListProductos";
 import Carros from "./Carros";
+import ModProductos from "./modProductos";
 
 
 function Admin(){
@@ -23,7 +24,7 @@ function Admin(){
   }
 
   let modificarProductos =() =>{
-    setModProductos(modProductos= <modProductos/>)
+    setModProductos(modProductos= <ModProductos/>)
     setListProductos(listProductos= "")
     setListVentas(listVentas= "")
     setCarrito(Carrito = "")

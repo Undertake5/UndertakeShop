@@ -1,4 +1,30 @@
-body{
+table {
+    margin-top: 50px;
+    margin-left: 15%;
     
-
-}
+    
+    table-layout: fixed;
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid darkgreen;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  
+  .producto{
+    vertical-align: text-top;
+  }
+  
+  .tabla{
+    background-color: rgb(194, 248, 194);
+    border: 1px solid;
+     
+  }
+  .botonGuardar{
+    background-color:   rgb(194, 248, 194);
+  }
+  .botonModificar{
+   background-color:  rgb(194, 248, 194) ;
+  }

@@ -18,7 +18,7 @@ function Carros(){
 
   return(
     <div >
-    <table >
+    <table  className='tabla'>
         <tr>
           <th>Imagen</th>
           <th>Cantidad</th>
