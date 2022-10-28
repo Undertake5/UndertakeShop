@@ -2,10 +2,6 @@ import datos from '../VentaAdm.json'
 import '../styles/styleCarrito.css'
 
 
-<div class="Hola">
-<img className="imgInicio" src="./imagenes/undertake.png" ></img> 
-
-</div>
 
 function Carros(){
 
@@ -20,7 +16,7 @@ function Carros(){
     <div >
     <table  className='tabla'>
         <tr>
-          <th>Imagen</th>
+          <th className='imagCarrito'><img src={datos.Imagen} align="left" /></th>
           <th>Cantidad</th>
           <th>Producto</th>
           <th>Valor</th>
@@ -30,7 +26,7 @@ function Carros(){
       {visualizar.map( (elem, idx) => {
           return(
               <tr>
-                  <td> {elem.Imagen} </td>
+                  <td> {<img className='imagCarrito' src={elem.Imagen} align="left"/>} </td>
                   <td> {elem.Cantidad} </td>
                   <td> {elem.Producto} </td>
                   <td>$ {elem.Valor} </td>
@@ -42,7 +38,7 @@ function Carros(){
       </table>
       
       <div class="pagar">
-                <h3>Valor total a pagar</h3>
+                <h3>Valor total a pagar = $ 370</h3>
                 
               </div>
       <br/>
