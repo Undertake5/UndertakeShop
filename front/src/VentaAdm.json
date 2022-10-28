@@ -1,0 +1,19 @@
+[
+    {
+"Imagen":1,
+"Cantidad":2,
+"Producto":"Chocolatina",
+"Valor": 2000,
+"Total": 4000
+},
+    {
+        "Imagen":"helado.png",
+        "Cantidad":5,
+        "Producto":"Helado",
+        "Valor": 10000,
+        "Total": 50000
+    }
+
+  ]
+
+  
