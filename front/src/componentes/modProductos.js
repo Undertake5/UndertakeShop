@@ -10,35 +10,42 @@ function ModProductos(){
 
   let visualizar=datos
   return(
-    <div className='tabla'>  
-
-
-          <tr >
-            <th className='imagenProducto'><img src={datos.Imagen} /></th>
-            <th className='imagenProducto'>Imagen</th>
-            <th className='producto'>Nombre</th>
-            <th className='producto'>Descripcion</th>
-            <th className='producto'>Valor</th>
-          </tr>
-        
+    <div >
+    <table className='tabla'>
+       <div ></div>
+       <tr >
+         <div img src={datos.imagen}></div>
+         <th className='producto'>imagen</th>
+         <th className='producto'>Nombre</th>
+         <th className='producto'>Descripcion</th>
+         <th className='producto'>Unidades Disponibles</th>
+         <th className='producto'>Valor</th>
+       </tr>
+       
           {visualizar.map( (elem, idx) => {
             return(
               <tr>
                   <td> {<img src={elem.Imagen} />} </td>
                   <td > {elem.imagen} </td>
                   <td > {elem.nombre} </td>
-                  <td > {elem.descripcion} </td>
-                  <td >$ {elem.valor} </td>
+                  <td > {elem.descripcion} </td> 
+                  <td > {elem.stock} </td>
+                  <td >$ {elem.valor} </td>       
+                
+
+                 
               </tr>
             )
             
-      })}
-      <div className='botonModificar' ><button>Modificar</button></div>
-      <div className='botonGuardar' ><button> guardar </button></div>
-  
+      })} 
+      </table>    
+             <button  className="buttonMod">Guardar</button>
+              <button  className="buttonMod">Modificar</button>
+     
     </div>
 
   )
+
 }
 
 

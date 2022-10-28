@@ -13,10 +13,10 @@ function ListarProductos(){
        <table className='tabla'>
           <div ></div>
           <tr >
-            {/*<div src={imagen[0].url}></div>*/}
-            <th className='imagenProducto'>Imagen</th>
+            <div img src={datos.imagen}></div>
             <th className='producto'>Nombre</th>
             <th className='producto'>Descripcion</th>
+            <th className='producto'>Unidades Disponibles</th>
             <th className='producto'>Valor</th>
           </tr>
         
@@ -26,6 +26,7 @@ function ListarProductos(){
                 <td > {elem.imagen} </td>
                   <td > {elem.nombre} </td>
                   <td > {elem.descripcion} </td>
+                  <td > {elem.stock} </td>              
                   <td >$ {elem.valor} </td>
               </tr>
             )

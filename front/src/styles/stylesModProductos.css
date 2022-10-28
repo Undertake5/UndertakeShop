@@ -1,30 +1,20 @@
 table {
-    margin-top: 50px;
-    margin-left: 15%;
-    
-    
-    table-layout: fixed;
-    width: 75%;
-    border-collapse: collapse;
-    border: 1px solid darkgreen;
-  }
-  
-  th, td {
-    padding: 20px;
-  }
-  
-  .producto{
-    vertical-align: text-top;
-  }
-  
-  .tabla{
-    background-color: rgb(194, 248, 194);
-    border: 1px solid;
-     
-  }
-  .botonGuardar{
-    background-color:   rgb(194, 248, 194);
-  }
-  .botonModificar{
-   background-color:  rgb(194, 248, 194) ;
+  margin-top: 50px;
+  margin-left: 15%;
+  text-align: center;
+  table-layout: fixed;
+  width: 75%;
+  border-collapse: collapse;
+  border: 1px solid darkgreen;
+}
+.buttonMod{
+  font-size: 25px;
+  border-radius: 10px;
+  background-color:darkgreen;
+  color:white;
+  border: none;
+  padding: 1.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 6%;
   }
