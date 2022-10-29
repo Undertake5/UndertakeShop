@@ -1,41 +1,43 @@
-table {
-  margin-top: 50px;
-  margin-left: 10%;
-  text-align: center; 
-  table-layout: fixed;
-  width: 80% ;
-  border-collapse: collapse;
-  border: 1px solid darkgreen;
+.tablaModProductos{
+  border: none;
+  margin-top: 2.5% ;
+  border: 1px solid #5C8D3A;
+  border-radius: 20px;
+  margin-left:5%;
+  width: 90%;
+  padding: 2%;
 }
 
+.colModProductos{
+  font: oblique bold 120% cursive;
+  text-align: left;
+}
 
+.rowModProductos {
+  font: 65% monospace;
+  text-align: left;
+}
 
 .producto{
-  font: bold 90% monospace;     
-}
-
-.rowModProductos{   
-  font: 60% monospace;     
+  font: bold 90% monospace;
 }
 
 .buttonMod{
   border: none;
   cursor:pointer;
   padding: 10%;;
-  background-color: #5C8D3A;
+  background-color: crimson;
   color: white;
   font: oblique bold 80% cursive;
   border-radius: 10px;
   margin-bottom: 0%;
   margin-left: 40;
- 
-  
-
-
 }
+
 .buttonMod:hover{
   background-color: #111;
 }
+
 .imagProducto{
   margin-bottom: 1%;
 }

@@ -1,19 +1,12 @@
-body{
-  background-color: white;
-  font-size: 25px;
-  margin-top: 25px;
-
-}
-
 .buttonCliente{
   background-color: #5C8D3A;
   color:#ffffff;
-  font-size: 20px;
   border: none;
   padding: 2%;
   text-decoration: none;
-  font: oblique bold 120% cursive;
+  font-size: 30px;
   cursor:pointer;
+  margin-right:5% ;
 }
 
 .buttonCliente:hover{
@@ -22,15 +15,11 @@ body{
 
 .blockCliente{
   background-color: #5C8D3A;
-  margin-left: 100px; 
-  margin-right: 100px;
-  margin-top: 10px;
-  
-
+  margin: 0;
+  padding: 0;
 }
 
 .iconoCliente {
   alt: "logo";
   width: 110px;
 }
-

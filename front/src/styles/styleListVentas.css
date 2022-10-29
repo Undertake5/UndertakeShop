@@ -1,4 +1,4 @@
-.tablaProductos{
+.tablaVentas{
   border: none;
   margin-top: 2.5% ;
   border: 1px solid #5C8D3A;
@@ -8,12 +8,13 @@
   padding: 2%;
 }
 
-.colProductos{
+.colVenta{
   font: oblique bold 120% cursive;
   text-align: left;
 }
 
-.rowProductos {
+.rowVenta {
+  padding-top: 3%;
   font: 65% monospace;
   text-align: left;
 }

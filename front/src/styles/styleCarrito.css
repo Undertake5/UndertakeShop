@@ -1,19 +1,13 @@
-body{
-  background-color: white;
-  font-size: 25px;
-  margin-top: 100px;
-
-}
-
 .buttonFinalizar{
   font-size: 25px;
   border-radius: 10px;
-  background-color: darkgreen;
+  background-color: crimson;
   color:white;
   border: none;
-  padding: 1.5%;
+  padding: 1%;
   margin-left: 2%;
   margin-right: 2%;
+  
 }
 .buttonCancelar{
   font-size: 25px;
@@ -21,9 +15,14 @@ body{
   background-color:darkgreen;
   color:white;
   border: none;
-  padding: 1.5%;
-  margin-left: 2%;
-  margin-right: 2%;
+  padding: 1%;
+  margin-right: 5%;
+  
+}
+
+.blockPagarCarrito{
+  margin-top: 1%;
+  text-align: right;
 }
 
 .buttonFinalizar:hover {
@@ -37,4 +36,35 @@ body{
 .imagCarrito {
   alt: "logo";
   width: 110px;
+  
+}
+
+.labelPagarCarrito{
+  font: oblique bold 150% cursive;
+}
+
+
+.tablaCarrito{
+  border: none;
+  margin-top: 2.5% ;
+  border: 1px solid #5C8D3A;
+  border-radius: 20px;
+  margin-left:5%;
+  width: 90%;
+  padding: 2%;
+}
+
+.colCarrito{
+  font: oblique bold 120% cursive;
+  text-align: left;
+}
+
+.rowCarrito{   
+  font: 65% monospace;
+  text-align: left;
+}
+
+.rowCarritoBold{
+  text-align: left;
+  font: bold 90% monospace;
 }

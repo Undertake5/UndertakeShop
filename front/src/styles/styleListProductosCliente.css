@@ -1,25 +1,40 @@
 .tablaProductosCliente{
     border: none;
+    margin-top: 2.5% ;
+    border: 1px solid #5C8D3A;
+    border-radius: 20px;
+    margin-left:5%;
+    width: 90%;
+    padding: 2%;
 }
 
 .colProClientes{
-    font: bold 90% monospace;     
+    font: oblique bold 120% cursive;
+    text-align: left;
+}
+
+.rowProClientesBold{
+    text-align: left;
+    font: bold 100% monospace;
 }
 
 .rowProClientes {   
-    font: 60% monospace;     
+    font: 65% monospace;
+    text-align: left;
 }
 
 .botonComprar{
     border: none;
-    padding: 3%;;
-    background-color: #5C8D3A;
+    padding: 6%;
+    background-color:crimson;
     color: white;
-    font: oblique bold 80% cursive;
-    cursor:pointer;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .botonComprar:hover {
     background-color: #111;
 }
+
+
   

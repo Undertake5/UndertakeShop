@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import '../styles/styleCliente.css';
 import Inicio from "./inicio"
-import ListVentas from "./ListVentas";
-import ListProductos from "./ListProductos";
 import ListarProductosCliente from "./ListProductosCliente";
 import Carros from "./Carros";
 
@@ -24,7 +22,6 @@ function Cliente(){
   }
 
   let init =<div className="blockCliente">
-              <img  className="iconoHome" src="./imagenes/undertake.png" align="left"></img>
               <button onClick={listarProductos} className="buttonCliente">Lista de  productos</button>
               <button onClick={listarCarrito} className="buttonCliente">Carrito</button>
               <button  onClick={volver} className="buttonCliente">Volver</button>

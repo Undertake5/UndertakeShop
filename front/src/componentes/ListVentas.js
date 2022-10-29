@@ -1,5 +1,5 @@
 import datos from '../ventas.json'
-import '../styles/styleListProduct.css'
+import '../styles/styleListVentas.css'
 
 function ListVentas(){
 
@@ -7,19 +7,19 @@ function ListVentas(){
 
   return(
     <div >
-      <table className='tabla'>
+      <table className='tablaVentas'>
         <tr>
-          <th>Fecha</th>
-          <th>IdVenta</th>
-          <th>Valor</th>
+          <th className='colVenta'>Fecha</th>
+          <th className='colVenta'>IdVenta</th>
+          <th className='colVenta'>Valor</th>
         </tr>
       
       {visualizar.map( (elem, idx) => {
           return(
               <tr>
-                  <td> {elem.fecha} </td>
-                  <td> {elem.idVenta} </td>
-                  <td>$ {elem.valor} </td>
+                  <td className='rowVenta'> {elem.fecha} </td>
+                  <td className='rowVenta'> {elem.idVenta} </td>
+                  <td className='rowVenta'>$ {elem.valor} </td>
               </tr>
           )
       })}
