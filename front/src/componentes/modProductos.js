@@ -3,6 +3,7 @@ import datos from '../productos.json'
 import '../styles/stylesModProductos.css'
 import './ListProductos'
 
+
 function ModProductos(){
 
   let visualizar=datos
@@ -28,7 +29,8 @@ function ModProductos(){
                   <td className="rowModProductos"> {elem.stock} </td>
                   <td className="rowModProductos">$ {elem.valor} </td>
                   <td className="rowModProductos"></td><button  className="buttonMod">Guardar</button>
-                  <td className="rowModProductos"></td><button  className="buttonMod">Modificar</button>
+                  <td className="rowModProductos"></td><button type="submit" id="buttonMod"> Modificar </button>
+              
                 </tr>
             )
           })}
