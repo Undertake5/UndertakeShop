@@ -17,3 +17,18 @@
   font: 65% monospace;
   text-align: left;
 }
+
+#containerAgregarProductos {
+  text-align: right;
+  margin-right:5%;
+  margin-top:1%;
+}
+
+#buttonAgregarProductos{
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: crimson;
+  color:white;
+  border: none;
+  padding: 1%;
+}
