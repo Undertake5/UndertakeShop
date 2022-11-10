@@ -1,42 +1,70 @@
-import React from 'react'
+import React, { useState } from "react";
 import datos from '../productos.json'
 import '../styles/stylesModProductos.css'
-import './ListProductos'
+import "../componentes/administrador"
+import ModificarProducto from './modificarProductos'
 
+let url = "http://localhost:5000"
+let datosProductos=consultarDatos();
 
-function ModProductos(){
+function ModProductos(){ 
 
-  let visualizar=datos
+  consultarDatos()
+
+  let init = <div >
+                <table className='tablaProductos'>
+                  <tr >
+                    <th ></th>
+                    <th className='colProductos'>Nombre</th>
+                    <th className='colProductos'>Descripcion</th>
+                    <th className='colProductos'>Unidades Disponibles</th>
+                    <th className='colProductos'>Valor</th>
+                  </tr>
+                   
+                  {datosProductos.map( (elem, idx) => {
+                    return(
+                      <tr>
+                          
+                          <td className='rowProductos'> {<img className='iconoCliente' src={elem.image} align="left"/>} </td>
+                          <td className='rowProductos'> {elem.name} </td>
+                          <td className='rowProductos'> {elem.description} </td>
+                          <td className='rowProductos'> {elem.stock} </td>              
+                          <td className='rowProductos'>$ {elem.price} </td>
+                          <button id="buttonAgregarProductos" onClick={vistaModificarProducto} >modificar</button>
+                          
+                         
+                      </tr>
+                    )
+                  })}
+                </table>
+               
+              </div>
+
+  let [estado, setEstado] = useState(init)
+
+  function vistaModificarProducto(){
+    setEstado(estado=<ModificarProducto/>)
+  }
 
   return(
     <div >
-        <table className='tablaModProductos'>
-          <tr >
-              <th ></th>
-              <th className='colModProductos'>Articulo</th>
-              <th className='colModProductos'>Descripcion</th>
-              <th className='colModProductos'>Unidades Disponibles</th>
-              <th className='colModProductos'>Valor</th>
-              <th className='colModProductos'></th>
-          </tr>
-
-          {visualizar.map( (elem, idx) => {
-            return(
-                <tr>
-                  <td className='rowModProductos'> <img className="iconoCliente" src={elem.imagen} align="left"></img> </td>
-                  <td className="rowModProductos"> {elem.nombre} </td>
-                  <td className="rowModProductos"> {elem.descripcion} </td> 
-                  <td className="rowModProductos"> {elem.stock} </td>
-                  <td className="rowModProductos">$ {elem.valor} </td>
-                  <td className="rowModProductos"></td><button  className="buttonMod">Guardar</button>
-                  <td className="rowModProductos"></td><button type="submit" id="buttonMod"> Modificar </button>
-              
-                </tr>
-            )
-          })}
-        </table>
-     </div>
+      {estado}
+    </div>
   )
 }
 
+function consultarDatos(){
+  return fetch(url+'/consultarProductos', {
+      method:'post',
+      headers:{'Content-Type':'application/json'}
+  })
+  .then(resp => resp.json())
+  .then(data => {
+    console.log(data)
+    datosProductos = data
+  })
+
+}
+
 export default ModProductos
+
