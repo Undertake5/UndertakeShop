@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import datos from '../productos.json'
+
 import '../styles/stylesModProductos.css'
 import "../componentes/administrador"
-import ModificarProducto from './modificarProductos'
+
+import ListProductos from "./ListProductos";
 
 let url = "http://localhost:5000"
 let datosProductos=consultarDatos();
@@ -14,11 +15,12 @@ function ModProductos(){
   let init = <div >
                 <table className='tablaProductos'>
                   <tr >
-                    <th ></th>
-                    <th className='colProductos'>Nombre</th>
-                    <th className='colProductos'>Descripcion</th>
-                    <th className='colProductos'>Unidades Disponibles</th>
-                    <th className='colProductos'>Valor</th>
+                    <th></th>
+                    <th ><label className='colProductos'>Nombre</label></th>                 
+                    <th><label className='colProductos'>Descripcion</label></th>            
+                    <th><label className='colProductos'>Unidades Disponibles</label></th>
+                    <th> <label className='colProductos'>Valor</label></th>
+                   
                   </tr>
                    
                   {datosProductos.map( (elem, idx) => {
@@ -26,12 +28,17 @@ function ModProductos(){
                       <tr>
                           
                           <td className='rowProductos'> {<img className='iconoCliente' src={elem.image} align="left"/>} </td>
-                          <td className='rowProductos'> {elem.name} </td>
-                          <td className='rowProductos'> {elem.description} </td>
-                          <td className='rowProductos'> {elem.stock} </td>              
-                          <td className='rowProductos'>$ {elem.price} </td>
-                          <button id="buttonAgregarProductos" onClick={vistaModificarProducto} >modificar</button>
+                           <th> <input id="name"  type="text" placeholder={elem.name} /> </th>  
+                           <th><input id ="description" type="text" placeholder={elem.description}/> </th> 
+                           <th> <input id="stock" type="number"  placeholder={elem.stock}/></th> 
+                           <th><input id="price" type="number" placeholder={elem.price}/></th>       
+                                         
                           
+                          <th><button id="buttonAgregarProductos" onClick={vistalistProducto} >Guardar</button></th>
+                          <th>  <button id="buttonAgregarProductos" onClick={vistalistProducto} >Eliminar</button></th>
+                          
+                        
+                                            
                          
                       </tr>
                     )
@@ -42,8 +49,8 @@ function ModProductos(){
 
   let [estado, setEstado] = useState(init)
 
-  function vistaModificarProducto(){
-    setEstado(estado=<ModificarProducto/>)
+  function vistalistProducto(){
+    setEstado(estado=<ListProductos/>)
   }
 
   return(

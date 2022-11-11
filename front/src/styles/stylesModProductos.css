@@ -1,16 +1,19 @@
 .tablaModProductos{
   border: none;
-  margin-top: 2.5% ;
+  margin-top: 20% ;
   border: 1px solid #5C8D3A;
   border-radius: 20px;
   margin-left:5%;
   width: 90%;
   padding: 2%;
 }
+.colProductos{
+margin-top: 200%;
+}
 
 .colModProductos{
   font: oblique bold 120% cursive;
-  text-align: left;
+  text-align: center;
 }
 
 .rowModProductos {
@@ -41,6 +44,9 @@
 .imagProducto{
   margin-bottom: 1%;
 }
-
-
-
+.shadow-lg{
+  background-color: #5C8D3A;
+}
+#buttonAgregarProductos{
+  margin-top: 5%;
+}
