@@ -1,0 +1,46 @@
+.container-agregar-producto {
+text-align: 50%;
+margin-top: 3%;
+}
+
+.container-label-agregar-producto {
+  text-align: 50%;
+  margin-top: 2%;
+  font: oblique bold 100% cursive;
+}
+
+.container-input-agregar-producto {
+
+}
+
+.container-button-agregar-producto{
+  margin-top: 4%;
+}
+
+.button-agregar-producto-guardar {
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: crimson;
+  color:white;
+  border: none;
+  padding: 1%;
+}
+
+.button-agregar-producto-cancelar {
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #5C8D3A;
+  color:white;
+  border: none;
+  padding: 1%;
+  margin-left: 1%;
+}
+
+
+.button-agregar-producto-guardar:hover{
+  background-color: #111;
+}
+
+.button-agregar-producto-cancelar:hover{
+  background-color: #111;
+}

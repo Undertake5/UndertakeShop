@@ -1,31 +1,44 @@
 import React, { useState } from "react";
 import ListProductos from "./ListProductos";
+import '../styles/styleAgregarProducto.css'
 
 let url = "http://localhost:5000"
 
 function AgregarProducto() {
 
-  let init = <div>
-              <form >
-                  <div>
-                      <label>Nombre</label>
-                      <input id="name"  type="text" placeholder="Ingrese el nombre" required />
-                  </div>
-                  <div>
-                      <label>Descripcion</label>
-                      <input id ="description" type="text" placeholder="Ingrese la descripcion" required/>
-                  </div>
-                  <div >
-                      <label>Unidades Disponibles</label>
-                      <input id="stock" type="number" placeholder="Ingrese las Unds disponibles" />
-                  </div>
-                  <div>
-                      <label>Valor</label>
-                      <input id="price" type="number" placeholder="ingrese el precio" />
-                  </div>
-                  <button type="button" onClick={registrarDatos}> Guardar </button>
-                  <button type="button" onClick={cancelar}> Cancelar </button>
-              </form>
+  let init = <div className="container-agregar-producto">
+                <div className="container-agregar-producto-general">
+                  <form >
+                      <div className="container-label-agregar-producto">
+                          <label>Nombre &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                      </div>
+                      <div className="container-input-agregar-producto">
+                          <input id="name"  type="text" placeholder="Ingrese el nombre" required />
+                      </div>
+                      <div className="container-label-agregar-producto">
+                          <label>Descripcion &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                      </div>
+                      <div className="container-input-agregar-producto">
+                          <input id ="description" type="text" placeholder="Ingrese la descripcion" required/>
+                      </div>
+                      <div className="container-label-agregar-producto">
+                          <label>Unidades Disponibles &nbsp;</label>
+                      </div>
+                      <div className="container-input-agregar-producto">
+                          <input id="stock" type="number" placeholder="Ingrese las Unds disponibles" />
+                      </div>
+                      <div className="container-label-agregar-producto">
+                          <label>Valor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                      </div>
+                      <div className="container-input-agregar-producto">
+                          <input id="price" type="number" placeholder="ingrese el precio" />
+                      </div>
+                      <div className="container-button-agregar-producto">
+                      <button  className="button-agregar-producto-guardar" type="button" onClick={registrarDatos}> Guardar </button>
+                      <button  className="button-agregar-producto-cancelar" type="button" onClick={cancelar}> Cancelar </button>
+                      </div>
+                  </form>
+                </div>
             </div>
 
   let [estado, setEstado] = useState(init)
