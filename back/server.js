@@ -1,5 +1,5 @@
 import Express from "express";
-import {insert, consultar} from './db.js'
+import {insert, consultar,eliminar} from './db.js'
 import cors from 'cors'
 
 const app = Express()
@@ -22,4 +22,10 @@ app.post('/registrarProducto', function(req, resp) {
     insert(req.body)
     .then(()=> resp.send("Producto guardado exitosamente"))
     .catch(err => resp.send("No se pudo registrar el producto"))
+})
+app.delete('/eliminarProducto', function(req, resp) {
+  eliminar(req.body.id)
+  
+  .then(()=> resp.send("Producto guardado exitosamente"))
+  .catch(err => resp.send("No se pudo registrar el producto"))
 })

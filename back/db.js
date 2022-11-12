@@ -28,3 +28,16 @@ export let insert = async (datos) => {
 export let consultar = async ()=> {
   return await modelo.find()
 }
+
+export const eliminar= async (id) =>{
+  let result = await modelo.deleteOne({_id:id}  )
+     if (result.deletedCount === 1) 
+        {     
+          console.log("Successfully deleted one document.");
+        } 
+        else {
+       console.log("No documents matched the query. Deleted 0 documents.");
+      }  
+}
+
+

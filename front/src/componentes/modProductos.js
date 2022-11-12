@@ -16,6 +16,7 @@ function ModProductos(){
                 <table className='tablaProductos'>
                   <tr >
                     <th></th>
+                    <th ><label className='colProductos'>id</label></th>  
                     <th ><label className='colProductos'>Nombre</label></th>                 
                     <th><label className='colProductos'>Descripcion</label></th>            
                     <th><label className='colProductos'>Unidades Disponibles</label></th>
@@ -26,8 +27,9 @@ function ModProductos(){
                   {datosProductos.map( (elem, idx) => {
                     return(
                       <tr>
-                          
+
                           <td className='rowProductos'> {<img className='iconoCliente' src={elem.image} align="left"/>} </td>
+                           <th> <input id="id"  type="text" placeholder={elem._id} /> </th> 
                            <th> <input id="name"  type="text" placeholder={elem.name} /> </th>  
                            <th><input id ="description" type="text" placeholder={elem.description}/> </th> 
                            <th> <input id="stock" type="number"  placeholder={elem.stock}/></th> 
@@ -35,15 +37,15 @@ function ModProductos(){
                                          
                           
                           <th><button id="buttonAgregarProductos" onClick={vistalistProducto} >Guardar</button></th>
-                          <th>  <button id="buttonAgregarProductos" onClick={vistalistProducto} >Eliminar</button></th>
-                          
+                          <th>  <button id="buttonAgregarProductos" onClick={eliminar} >Eliminar</button></th>                        
                         
-                                            
-                         
+                                                                    
                       </tr>
                     )
                   })}
                 </table>
+                                     
+                        
                
               </div>
 
@@ -59,6 +61,25 @@ function ModProductos(){
     </div>
   )
 }
+function eliminar(){
+  let datos = {
+     _id: document.getElementById('id').value
+     
+  }
+  fetch(url+'/eliminarProducto', {
+      method:'delete',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(datos)
+  })
+  .then(res => res.text())
+  .then(data => {
+    console.log("producto eliminado")
+   
+  })
+}
+
+
+
 
 function consultarDatos(){
   return fetch(url+'/consultarProductos', {
