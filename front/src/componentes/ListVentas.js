@@ -1,9 +1,11 @@
-import datos from '../ventas.json'
 import '../styles/styleListVentas.css'
+
+let url = "http://localhost:5000"
+let visualizar = consultarDatos()
 
 function ListVentas(){
 
-  let visualizar = datos
+  consultarDatos()
 
   return(
     <div >
@@ -18,7 +20,7 @@ function ListVentas(){
           return(
               <tr>
                   <td className='rowVenta'> {elem.fecha} </td>
-                  <td className='rowVenta'> {elem.idVenta} </td>
+                  <td className='rowVenta'> {elem._id} </td>
                   <td className='rowVenta'>$ {elem.valor} </td>
               </tr>
           )
@@ -27,5 +29,19 @@ function ListVentas(){
     </div>
   )
 }
+
+function consultarDatos(){
+  return fetch(url+'/consultarVentas', {
+      method:'post',
+      headers:{'Content-Type':'application/json'}
+  })
+  .then(resp => resp.json())
+  .then(data => {
+    console.log(data)
+    visualizar = data
+  })
+
+}
+
 
 export default ListVentas
